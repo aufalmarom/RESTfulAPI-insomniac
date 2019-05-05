@@ -34,7 +34,7 @@ class UserController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function users(User $user)
+    public function show(User $user)
     {
         $users = $user->all();
         return response()->json($users);
